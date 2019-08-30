@@ -1,0 +1,22 @@
+(HEAD -> master)//HEAD指当前最新版本  head^前一个 head^^前两个 没人用
+错误信息:
+On branch master   在分支主机上
+Changes not staged for commit  未准备提交的更改：
+
+modified:被改进的
+
+Untracked files: 未跟踪的文件
+
+no changes added to commit  没有添加要提交的更改
+
+@@ +1,2 -1,3 @@表示从a文件第1行开始之后的2行代码 ==> 从b文件第1行开始之后的3行代码
+
+代码操作:
+git add file1 file2 file3 提交多个文件
+git diff 版本号 当前版本与任意版本进行比较
+git reset 版本号 回滚到指定版本
+git reflog  回退之后仍能看到所有版本及版本号
+git reset --hard 版本号 回滚到指定版本并且在文档中恢复至指定版本
+
+git restore --staged file 将文件从暂缓区取出,从stage里面拿出来
+git checkout -- file 撤销在工作区做的修改
